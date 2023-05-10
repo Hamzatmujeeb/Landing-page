@@ -27,3 +27,24 @@ imgWraps.forEach((imgWrap) => {
     close.style.display = 'none';
   });
 });
+
+//form
+const form = document.getElementById('contact-form');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const firstName = document.querySelector('#fname').value.trim();
+        const lastName = document.querySelector('#lname').value.trim();
+        const email = document.querySelector('#email').value.trim();
+        const country = document.querySelector('#country').value.trim();
+        const subject = document.querySelector('#subject').value.trim();
+
+        if (firstName === '' || lastName === '' || email === '' || country === '' || subject === '') {
+          alert('Please fill in all fields');
+          return;
+        }
+
+        alert(`Thank you for your message, ${firstName}! We will get back to you as soon as possible.`);
+        form.reset();
+      });
