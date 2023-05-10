@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="imagegallery.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
@@ -97,7 +97,10 @@
    
     <div class="gallery">
         <div class="gallery-description">
-       <img src="images/horse.jpg" style="height:207px;" alt="A standing horse" class="img-gallery">
+       <div class="img-wrap">
+        <img src="images/horse.jpg" style="height:207px;" alt="A standing horse" class="img-gallery">
+        <span class="close">x</span>
+       </div>
        <h3 class="gallery-description-text">An Horse </h3>
        <p class="gallery-description-paragraph">
         My horse fur felt like silk against my 
@@ -106,7 +109,10 @@
       </div>
       
       <div class="gallery-description">
-        <img src="images/dog.jpg" alt="A dog Sitting down" class="img-gallery">
+        <div class="img-wrap">
+          <img src="images/dog.jpg" style="height:207px;" alt="A standing horse" class="img-gallery">
+          <span class="close">x</span>
+         </div>
         <h3 class="gallery-description-text">Brown Dog </h3>
         <p class="gallery-description-paragraph">
          My dog's fur felt like silk against my 
@@ -115,7 +121,10 @@
        </div>
 
        <div class="gallery-description">
-        <img src="images/Dock.jfif" alt="Black dock picture" class="img-gallery">
+        <div class="img-wrap">
+          <img src="images/Dock.jfif" alt="Black dock picture" class="img-gallery">
+          <span class="close">X</span>
+        </div>
         <h3 class="gallery-description-text">Black Dock </h3>
         <p class="gallery-description-paragraph">
          My dock's fur felt like silk against my 
@@ -206,7 +215,7 @@
       <footer>
           <p>© 2022 AL MUJEEB</p>
       </footer>
-  </article>
     
+  <script src="./main.js"></script>
 </body>
 </html>

@@ -104,6 +104,45 @@
     background-color: #4caf50;
   
   } 
+  
+  .preview {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+  }
+
+  .preview img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 200%;
+  }
+
+  .close {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    line-height: 2.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .close:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
 
   @media (max-width: 640px) {
     .heading {
